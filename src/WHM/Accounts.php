@@ -4,12 +4,12 @@ namespace lukehebb\cPanelWHM\WHM;
 
 use DateTime;
 use Http\Client\Exception;
-use PreviewTechs\cPanelWHM\Entity\Account;
-use PreviewTechs\cPanelWHM\Entity\Domain;
-use PreviewTechs\cPanelWHM\Entity\DomainUser;
-use PreviewTechs\cPanelWHM\Entity\SuspendedAccount;
-use PreviewTechs\cPanelWHM\Exceptions\ClientExceptions;
-use PreviewTechs\cPanelWHM\WHMClient;
+use lukehebb\cPanelWHM\Entity\Account;
+use lukehebb\cPanelWHM\Entity\Domain;
+use lukehebb\cPanelWHM\Entity\DomainUser;
+use lukehebb\cPanelWHM\Entity\SuspendedAccount;
+use lukehebb\cPanelWHM\Exceptions\ClientExceptions;
+use lukehebb\cPanelWHM\WHMClient;
 
 /**
  * Class Accounts
