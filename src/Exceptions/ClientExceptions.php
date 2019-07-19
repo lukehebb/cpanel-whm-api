@@ -1,6 +1,6 @@
 <?php
 
-namespace PreviewTechs\cPanelWHM\Exceptions;
+namespace lukehebb\cPanelWHM\Exceptions;
 
 class ClientExceptions extends \Exception
 {

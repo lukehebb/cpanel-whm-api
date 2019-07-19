@@ -1,6 +1,6 @@
 <?php
 
-namespace PreviewTechs\cPanelWHM\WHM;
+namespace lukehebb\cPanelWHM\WHM;
 
 use DateTime;
 use Http\Client\Exception;

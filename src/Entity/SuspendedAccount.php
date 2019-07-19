@@ -1,6 +1,6 @@
 <?php
 
-namespace PreviewTechs\cPanelWHM\Entity;
+namespace lukehebb\cPanelWHM\Entity;
 
 
 class SuspendedAccount

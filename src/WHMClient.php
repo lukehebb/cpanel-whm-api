@@ -1,6 +1,6 @@
 <?php
 
-namespace PreviewTechs\cPanelWHM;
+namespace lukehebb\cPanelWHM;
 
 use GuzzleHttp\Psr7\Request;
 use Http\Adapter\Guzzle6\Client;

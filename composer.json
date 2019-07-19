@@ -1,16 +1,16 @@
 {
-    "name": "previewtechs/cpanel-whm-api",
+    "name": "lukehebb/cpanel-whm-api",
     "description": "Manage WHM and cPanel servers with PHP",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Shaharia Azam",
-            "email": "shaharia.azam@gmail.com"
+            "name": "lukehebb",
+            "email": "me@lukehebb.uk"
         }
     ],
     "require": {
-        "php": ">=5.5",
+        "php": ">=7.0",
         "ext-curl": "*",
         "guzzlehttp/psr7": "^1.4",
         "php-http/client-implementation": "^1.0",
@@ -18,12 +18,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PreviewTechs\\cPanelWHM\\": "src"
+            "lukehebb\\cPanelWHM\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PreviewTechs\\cPanelWHM\\Tests\\": "tests"
+            "lukehebb\\cPanelWHM\\Tests\\": "tests"
         }
     },
     "require-dev": {
