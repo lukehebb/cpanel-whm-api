@@ -1,18 +1,14 @@
 ## cPanel/WHM API PHP
 Manage your WHM/cPanel server with this PHP library. Simple to use. With this PHP library, you can manage your cPanel/WHM server.
 
-[![License](https://img.shields.io/packagist/l/previewtechs/cpanel-whm-api.svg)](https://github.com/PreviewTechnologies/cpanel-whm-api/blob/master/LICENSE)
-[![Build Status](https://api.travis-ci.org/PreviewTechnologies/cpanel-whm-api.svg?branch=master)](https://travis-ci.org/PreviewTechnologies/cpanel-whm-api)
-[![Code Coverage](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/?branch=master)
-[![Code Quality](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/?branch=master)
-[![Code Quality](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/?branch=master)
+This is a fork of [PreviewTechnologies/cpanel-whm-api](https://github.com/PreviewTechnologies/cpanel-whm-api). The plan is to modernise it and build out the functionality over time to fit better with Laravel projects.
 
 ### Installation
 
 You can install this library with composer.
 
 ```bash
-composer require previewtechs/cpanel-whm-api:dev-master
+composer require lukehebb/cpanel-whm-api:dev-master
 ```
 
 ### Usage
@@ -21,8 +17,8 @@ composer require previewtechs/cpanel-whm-api:dev-master
 require "vendor/autoload.php";
 
 //Build WHM Client
-use PreviewTechs\cPanelWHM\WHM\Accounts;
-use PreviewTechs\cPanelWHM\WHMClient;
+use lukehebb\cPanelWHM\WHM\Accounts;
+use lukehebb\cPanelWHM\WHMClient;
 
 require "vendor/autoload.php";
 $whmClient = new WHMClient("WHM_USERNAME","API_TOKEN", "yourwhmserver.com", 2087);
@@ -46,7 +42,7 @@ Create API token from https://your-whm-server:2087/cpsessxxxxxx/scripts7/apitoke
 Learn more about WHM API Token from [https://documentation.cpanel.net/display/64Docs/Manage+API+Tokens](https://documentation.cpanel.net/display/64Docs/Manage+API+Tokens)
 ```php
 <?php
-use PreviewTechs\cPanelWHM\WHMClient;
+use lukehebb\cPanelWHM\WHMClient;
 $whmClient = new WHMClient("WHM_USERNAME","API_TOKEN", "yourwhmserver.com", 2087);
 ```
 
@@ -67,15 +63,16 @@ $whmClient = new WHMClient("WHM_USERNAME","API_TOKEN", "yourwhmserver.com", 2087
     - getUsers (List of all users in server)
     - getLockedAccounts (List of all locked accounts)
     - getSuspendedAccounts (List of all suspended accounts)
+    - create_user_session()
     
 
 ### Contibutions
 You are always welcome to contribute in this library.
 
-See our [list of contributors](https://github.com/PreviewTechnologies/cpanel-whm-api/graphs/contributors)
+See our [list of contributors](https://github.com/lukehebb/cpanel-whm-api/graphs/contributors)
 
 ### Issues/Bug Reports
-Please [create an issue or report a bug](https://github.com/PreviewTechnologies/cpanel-whm-api/issues/new) in this GitHub repository and we will be
+Please [create an issue or report a bug](https://github.com/lukehebb/cpanel-whm-api/issues/new) in this GitHub repository and we will be
 happy to look into that.
 
 ### License
